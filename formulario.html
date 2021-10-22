@@ -6,33 +6,24 @@
 </head>
 <body>
 <form method="POST" action="http://formadorestic.com/alumnosdaw/procesaformulario.php">
-	<label for="nombre">¿Como te llamas?</label>
-	<input type="text" name="nombre" placeholder="Ponga aqui su nombre" style="border-radius: 5px;" id="nombre">
-	
-	<br>
 
-	<br>
-	<label for="email">¿Cual es tu email?</label>
-	
-	<input type="email" name="email" placeholder="Ponga aqui su email" style="border-radius: 5px;" id="email">
-	
-	<br>
-	<br>
-       <label for="edad">¿Cuantos años tienes? </label>
-       <input type="number" name="edad" min="1" max="100" style="border-radius: 5px" id="edad" placeholder="Edad">
-    <br>
-    <br>
-¿Eres mayor de edad?
-    <br>
-       <input type="radio" name="mayormenor" value="mayor de edad" id="mayor">
-       <label for="mayor">Si</label>
-    <br>
+	 <label for="nombre"><b>¿Como te llamas?</b></label><br>
+	 <input type="text" name="nombre" placeholder="Ponga aqui su nombre" style="border-radius: 5px;" id="nombre" required><br><br>
+
+	 <label for="email"><b>¿Cual es tu email?</b></label><br>
+	 <input type="email" name="email" placeholder="Ponga aqui su email" style="border-radius: 5px;" id="email" required><br><br>
+
+       <label for="edad"><b>¿Cuantos años tienes? </b></label><br>
+       <input type="number" name="edad" min="1" max="100" style="border-radius: 5px" id="edad" placeholder="Edad" required><br><br>
+
+      <b>¿Eres mayor de edad? </b><br>
+       <input type="radio" name="mayormenor" value="mayor de edad" id="mayor" required>
+       <label for="mayor">Si</label><br> 
+
        <input type="radio" name="mayormenor" value="menor de edad" id="menor">
-       <label for="menor">No</label>
+       <label for="menor">No</label><br>
 
-    <br>
-       <input type="submit" value="aceptar" style="border-radius: 10px">
-
+       <input type="submit" value="Aceptar" style="border-radius: 10px">
 
 </form>
 </body>
